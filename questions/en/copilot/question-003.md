@@ -1,6 +1,6 @@
 ---
 question: "Which IDEs are not supported by GitHub Copilot?"
-documentation: "https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions"
+documentation: "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/get-ide-code-suggestions"
 ---
 
 - [x] NetBeans

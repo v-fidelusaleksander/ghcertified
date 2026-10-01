@@ -1,6 +1,6 @@
 ---
 question: "How does GitHub Copilot's matching public code feature work?"
-documentation: "https://docs.github.com/en/copilot/how-tos/get-code-suggestions/find-matching-code"
+documentation: "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/find-matching-code"
 ---
 
 - [x] It searches for matches by comparing code suggestions against an index of public GitHub repositories, which is refreshed every few months
