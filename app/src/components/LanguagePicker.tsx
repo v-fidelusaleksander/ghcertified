@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useLocale } from "next-intl";
 import { Check, ChevronDown } from "lucide-react";
@@ -28,7 +28,7 @@ function stripLocale(pathname: string): string {
   return pathname;
 }
 
-export function LanguagePicker({ className }: { className?: string }) {
+export function LanguagePickerInner({ className }: { className?: string }) {
   const pathname = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -111,5 +111,17 @@ export function LanguagePicker({ className }: { className?: string }) {
         </div>
       </PopoverContent>
     </Popover>
+  );
+}
+
+export function LanguagePicker({
+  className,
+}: {
+  className?: string;
+}) {
+  return (
+    <Suspense fallback={null}>
+      <LanguagePickerInner className={className} />
+    </Suspense>
   );
 }
