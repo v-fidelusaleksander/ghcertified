@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useLocale } from "next-intl";
 import { Check, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -31,6 +31,7 @@ function stripLocale(pathname: string): string {
 export function LanguagePicker({ className }: { className?: string }) {
   const pathname = usePathname();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const locale = useLocale();
   const typedLocale = parseSupportedLocale(locale);
   const [open, setOpen] = useState(false);
@@ -40,9 +41,12 @@ export function LanguagePicker({ className }: { className?: string }) {
   function handleSelect(newLocale: SupportedLocale) {
     setOpen(false);
     if (newLocale === typedLocale) return;
-    router.push(
-      `/${newLocale}${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`
-    );
+    
+    const newPath = `/${newLocale}${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`;
+    const searchString = searchParams.toString();
+    const finalUrl = searchString ? `${newPath}?${searchString}` : newPath;
+
+    router.push(finalUrl);
   }
 
   return (
