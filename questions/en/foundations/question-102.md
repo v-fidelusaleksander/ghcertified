@@ -5,5 +5,5 @@ documentation: "https://docs.github.com/en/repositories/managing-your-repository
 
 - [ ] Root directory, `.docs` directory, `.github` directory
 - [ ] `.docs` directory, Root directory, `.github` directory
-- [x] `.github` directory, Root directory, `.docs` directory
+- [x] `.github` directory, Root directory, `docs` directory
 - [ ] `.docs` directory, `.github` directory, Root directory
