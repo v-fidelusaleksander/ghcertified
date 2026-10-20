@@ -3,16 +3,16 @@ question: "You are writing a reusable workflow which has `branch-name` as an inp
 documentation: "https://docs.github.com/en/actions/reference/workflows-and-actions/expressions#startswith"
 ---
 
-- [x] Use the built-in `startsWith` method in combination with `jobs.<job_id>.steps[*].if`
+- [x] Use the built-in `startsWith` function in combination with `jobs.<job_id>.steps[*].if`
 ```yaml
     if: startsWith(inputs.branch-name, 'smoke-test')
 ```
 
-- [ ] Use the built-in `startsWith` method in combination with `jobs.<job_id>.steps[*].if`
+- [ ] Use the built-in `startsWith` function in combination with `jobs.<job_id>.steps[*].if`
 ```yaml
     if: inputs.branch-name.startsWith('smoke-test')
 ``` 
-> You cannot use method chaining with Github Actions built-in methods. Almost all built-in methods are written in the style of `methodName(arg1,arg2,...)` 
+> `startsWith` is a built-in expression function, not a method, so it cannot be called on a value. Built-in functions are written in the style of `functionName(arg1, arg2, ...)`
 - [ ] Use the `branches` filter under `workflow_call`
 ```yaml
 on:
