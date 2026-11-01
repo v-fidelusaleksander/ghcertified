@@ -1,6 +1,6 @@
 ---
 question: "Which of the following integrates GitHub Copilot Chat with external tools?"
-documentation: "https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/context/mcp"
+documentation: "https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/customizations/mcp"
 ---
 
 - [x] GitHub Copilot Extensions

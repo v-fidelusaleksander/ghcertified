@@ -1,6 +1,6 @@
 ---
 question: "What are some of the principles of Prompt Engineering?"
-documentation: "https://docs.github.com/en/copilot/concepts/prompting/prompt-engineering"
+documentation: "https://docs.github.com/en/copilot/concepts/prompting-and-context/prompt-engineering"
 ---
 
 - [x] Focus on a single, well-defined task
