@@ -10,3 +10,4 @@ documentation: "https://docs.github.com/en/code-security/secret-scanning/about-s
 - [ ] GitHub Environment secrets
 > https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-an-environment
 - [ ] Entire git history on all protected branches in the repository
+> Understates the scope. Secret scanning scans your entire Git history on all branches, not just protected ones.
