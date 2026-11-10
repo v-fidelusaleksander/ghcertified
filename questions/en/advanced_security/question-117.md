@@ -1,5 +1,5 @@
 ---
-question: "Push protection is enabled on a repository. A developer saves an Alibaba Cloud access key ID in `deploy.cfg` and the matching access key secret in `notes.txt`, commits both files, and runs `git push` to the upstream repository. What happens?"
+question: "Secret scanning push protection is enabled on a repository. A developer saves an Alibaba Cloud access key ID in `deploy.cfg` and the matching access key secret in `notes.txt`, commits both files, and runs `git push` to the upstream repository. What happens?"
 documentation: "https://docs.github.com/en/enterprise-cloud@latest/code-security/reference/secret-security/secret-scanning-scope#detection-of-pattern-pairs"
 ---
 
