@@ -21,13 +21,13 @@ jobs:
       changed_files: ${{ steps.changed-files.outputs.all_changed_files }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
 
       - name: Get changed files
         id: changed-files
-        uses: tj-actions/changed-files@9426d40962ed5378910ee2e21d5f8c6fcbf2dd96 # v47.0.6
+        uses: tj-actions/changed-files@v47.0.6
         with:
           matrix: true
           files: |
@@ -54,7 +54,7 @@ jobs:
     needs: translate
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
       # Generate a GitHub App token for PR creation so that downstream workflows
@@ -62,7 +62,7 @@ jobs:
       # do not trigger subsequent workflow runs.
       - name: Generate GitHub App Token
         id: app-token
-        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        uses: actions/create-github-app-token@v3.3.0
         with:
           client-id: ${{ secrets.AUTO_TRANSLATE_APP_CLIENT_ID }}
           private-key: ${{ secrets.AUTO_TRANSLATE_APP_PRIVATE_KEY }}
