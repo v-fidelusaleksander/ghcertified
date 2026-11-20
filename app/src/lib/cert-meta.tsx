@@ -49,7 +49,6 @@ export const CERT_META: Record<CertificationType, CertMeta> = {
     borderClass: "border-cert-agentic",
     textClass: "text-cert-agentic",
     icon: <AgentIcon size={24} className="text-primary-foreground" />,
-    beta: true,
   },
   admin: {
     colorClass: "bg-cert-admin",
