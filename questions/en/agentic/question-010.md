@@ -4,7 +4,7 @@ documentation: "https://docs.github.com/en/copilot/how-tos/copilot-on-github/use
 ---
 
 - [x] The developer's approval does not count toward the required approvals, so another reviewer must approve the pull request
-> The user who asked Copilot to create a pull request cannot approve it, which keeps the "Required approvals" rule meaningful. See [Risks and mitigations](https://docs.github.com/en/copilot/concepts/agents/cloud-agent/risks-and-mitigations).
+> The user who asked Copilot to create a pull request cannot approve it, which keeps the "Required approvals" rule meaningful. See [Risks and mitigations](https://docs.github.com/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations).
 - [ ] The approval counts like any other approval, and the developer can merge the pull request
 > The developer who started the agent's work is not an independent reviewer of that work.
 - [ ] Copilot merges the pull request automatically after the developer's approval

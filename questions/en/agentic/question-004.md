@@ -1,6 +1,6 @@
 ---
 question: "A step in the `copilot-setup-steps` job of a repository exits with a non-zero exit code. How does Copilot cloud agent behave?"
-documentation: "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/customize-the-agent-environment"
+documentation: "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment"
 ---
 
 - [x] It skips the remaining setup steps and starts working with the current state of the development environment

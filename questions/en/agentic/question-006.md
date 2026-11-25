@@ -1,6 +1,6 @@
 ---
 question: "During an audit, you need to identify who is accountable for commits created by Copilot cloud agent. How are these commits attributed?"
-documentation: "https://docs.github.com/en/copilot/concepts/agents/cloud-agent/risks-and-mitigations"
+documentation: "https://docs.github.com/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations"
 ---
 
 - [x] Copilot is the author, and the developer who assigned the issue or requested the change is a co-author

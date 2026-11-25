@@ -1,6 +1,6 @@
 ---
 question: "Copilot cloud agent pushed new commits to its pull request, but none of the repository's GitHub Actions CI workflows have started. The repository uses the default settings. What explains this?"
-documentation: "https://docs.github.com/en/copilot/concepts/agents/cloud-agent/risks-and-mitigations"
+documentation: "https://docs.github.com/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations"
 ---
 
 - [x] Workflows do not run on the agent's changes until a user with write access clicks "Approve and run workflows"

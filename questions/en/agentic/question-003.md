@@ -1,6 +1,6 @@
 ---
 question: "The following workflow is committed to the default branch, but Copilot cloud agent ignores it and starts without the project dependencies installed. What is the cause?"
-documentation: "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/customize-the-agent-environment"
+documentation: "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment"
 ---
 
 ```yaml
